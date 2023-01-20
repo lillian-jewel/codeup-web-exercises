@@ -22,4 +22,4 @@ alert("You told me that it was " + likedLunch + "that you had lunch");
 //Prompt
 var whatDidYouHaveForLunch = prompt("You told me that it was " + likedLunch + " that you had lunch");
 
-alert("You told me that it was " + whatDidYouHaveForLunch + "that you had lunch");
+alert("You told me that it was " + whatDidYouHaveForLunch + "that you had for lunch");
