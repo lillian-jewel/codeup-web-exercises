@@ -4,9 +4,9 @@ console.log("Hello from external JavaScript");
 
 alert("Welcome to my Website!");
 
-/* var favoriteColor = prompt("What is your favorite color?")
-alert(favoriteColor + " is my favorite color too!")
-*/
+var favoriteColor = prompt("What is your favorite color?");
+alert(favoriteColor + " is my favorite color too!");
+
 
 
 /* You have rented some movies for your kids: The little mermaid (for 3 days),
@@ -68,16 +68,13 @@ and the offer has not expired. Premium members do not need to buy a specific amo
  */
 
 var offer = prompt("There is currently an offer if you buy more than 2 items. " +
-    "It applies if the offer is not expired. If you are a premium member, you do not need to buy a specific amount of products.")
+    "It applies if the offer is not expired. If you are a premium member, you do not need to buy a specific amount of products.");
 
-var offerExpired = confirm("Is the offer expired?")
-var offerMoreThan = confirm("Do you have more than 2 items?")
+var offerExpired = confirm("Is the offer expired?");
+var offerMoreThan = confirm("Do you have more than 2 items?");
+var offerPremium = confirm ("Are you a premium member?");
 
-var offerPremium = confirm ("Are you a premium member?")
-var premiumMember = (offerExpired && offerPremium)
-
-
-var offerTrueFalse = (offerExpired === true) && (offerMoreThan === true) && (offerPremium === false)
+alert("It is " + ((offerExpired) && (offerMoreThan)) || offerPremium + "that you can have the discount.");
 
 
 
