@@ -59,13 +59,32 @@ var currSched = prompt("Does it conflict with your current schedule?");
 
 var enrolled = fullClass && currSched
 
-alert("")
+alert("You are " + enrolled + "! Congratulations!")
 
 
 
 /*  product offer can be applied only if a person buys more than 2 items,
 and the offer has not expired. Premium members do not need to buy a specific amount of products.
  */
+
+var offer = prompt("There is currently an offer if you buy more than 2 items. " +
+    "It applies if the offer is not expired. If you are a premium member, you do not need to buy a specific amount of products.")
+
+var offerExpired = confirm("Is the offer expired?")
+var offerMoreThan = confirm("Do you have more than 2 items?")
+
+var offerPremium = confirm ("Are you a premium member?")
+var premiumMember = (offerExpired && offerPremium)
+
+
+var offerTrueFalse = (offerExpired === true) && (offerMoreThan === true) && (offerPremium === false)
+
+
+
+
+
+
+
 
 
 
