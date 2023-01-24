@@ -8,7 +8,7 @@
 */
 
 function sayHello (name){
-    return ("Hello, " + name)
+    return ("Hello, " + name);
 }
 
 /* Call the function 'sayHello' and pass your name as a string literal argument.
@@ -16,11 +16,19 @@ function sayHello (name){
 *
 * console.log 'helloMessage' to check your work */
 
+var helloMessage = sayHello("Lilly")
+console.log(helloMessage)
+
+
+
 /* Store your name as a string in a variable named 'myName', and pass that
 * variable to the 'sayHello' function. You should see the same output in the
 * console.
  */
+
 var myName = "Lilly"
+
+
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -46,6 +54,8 @@ function isTwo (x) {
 * number)
  */
 
+console.log(isTwo(random))
+
 
 /* Create a function named 'calculateTip' to calculate a tip on a bill at a
 * restaurant. The function should accept a tip percentage and the total of the
@@ -57,6 +67,12 @@ function isTwo (x) {
 * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+
+ function calculateTip (bill, tip){
+   return (bill * tip);
+ }
+
+
 /* Use prompt and alert in combination with your calculateTip function to
 * prompt the user for the bill total and a percentage they would like to tip,
 * then display the dollar amount they should tip
@@ -64,10 +80,8 @@ function isTwo (x) {
 
 var wantTip = prompt("How much would you like to tip?")
 var billTotal = prompt("How much is the bill?")
-function calculateTip (){
-    return (billTotal * wantTip);
-}
-alert("The tip will be $" + calculateTip());
+
+alert("The tip will be $" + calculateTip(wantTip, billTotal));
 
 /* Create a function named `applyDiscount`. This function should accept a price
 * (before a discount is applied), and a discount percentage (a number between 0
@@ -83,7 +97,7 @@ alert("The tip will be $" + calculateTip());
 */
 
 function applyDiscount (price, discount){
-    return (price * discount);
+    return price - (price * discount);
 }
 
 
