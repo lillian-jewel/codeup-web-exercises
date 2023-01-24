@@ -61,12 +61,43 @@ console.log(analyzeColor(randomColor))
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 
+var analyzeColor = prompt("What is your favorite color?")
+
+switch(analyzeColor) {
+    case "Red":
+        alert("Apples are Red");
+        break;
+    case "Orange":
+        alert("Oranges are Orange");
+        break;
+    case "Yellow":
+        alert("Lemons are Yellow");
+        break;
+    case "Green":
+        alert("Grass is Green");
+        break;
+    case "Blue":
+        alert("The ocean is Blue");
+        break;
+    case "Purple":
+        alert("Lavender is purple");
+        break;
+    default:
+        alert("I'm not too sure about that color.");
+        break;
+    }
+
+
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+ var enterColor = prompt("Please enter a color")
+
+alert(analyzeColor(enterColor))
+
 
 /* ########################################################################## */
 
