@@ -19,19 +19,19 @@
 
 function analyzeColor(color) {
     if (color === 'red') {
-        alert("Apples are Red");
+        return("Apples are Red");
     } else if (color === 'orange') {
-        alert("Oranges are Orange");
+        return("Oranges are Orange");
     } else if (color === 'yellow') {
-        alert("Lemons are Yellow");
+        return("Lemons are Yellow");
     } else if (color === 'green') {
-        alert("Grass is Green");
+        return("Grass is Green");
     } else if (color === 'blue') {
-        alert("The ocean is Blue");
+        return("The ocean is Blue");
     } else if (color === 'purple') {
-        alert("Lavender is purple");
+        return("Lavender is purple");
     } else {
-        alert("I'm not too sure about that color.");
+        return("I'm not too sure about that color.");
     }
 }
 
@@ -56,52 +56,51 @@ console.log(analyzeColor(randomColor))
 
 */
 
-/**
- * TODO:
+/*
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 
-var analyzeColor = prompt("What is your favorite color?")
+// var analyzeColor = prompt("What is your favorite color?")
+//
+// switch(analyzeColor) {
+//     case "Red":
+//         alert("Apples are Red");
+//         break;
+//     case "Orange":
+//         alert("Oranges are Orange");
+//         break;
+//     case "Yellow":
+//         alert("Lemons are Yellow");
+//         break;
+//     case "Green":
+//         alert("Grass is Green");
+//         break;
+//     case "Blue":
+//         alert("The ocean is Blue");
+//         break;
+//     case "Purple":
+//         alert("Lavender is purple");
+//         break;
+//     default:
+//         alert("I'm not too sure about that color.");
+//         break;
+//     }
+//
 
-switch(analyzeColor) {
-    case "Red":
-        alert("Apples are Red");
-        break;
-    case "Orange":
-        alert("Oranges are Orange");
-        break;
-    case "Yellow":
-        alert("Lemons are Yellow");
-        break;
-    case "Green":
-        alert("Grass is Green");
-        break;
-    case "Blue":
-        alert("The ocean is Blue");
-        break;
-    case "Purple":
-        alert("Lavender is purple");
-        break;
-    default:
-        alert("I'm not too sure about that color.");
-        break;
-    }
-
-
-/**
- * TODO:
- * Prompt the user for a color when the page loads, and pass the input from the
- * user to your `analyzeColor` function. Alert the return value from your
- * function to show it to the user.
- */
- var enterColor = prompt("Please enter a color")
-
-alert(analyzeColor(enterColor))
+// /**
+//  * TODO:
+//  * Prompt the user for a color when the page loads, and pass the input from the
+//  * user to your `analyzeColor` function. Alert the return value from your
+//  * function to show it to the user.
+//  */
+//  var enterColor = prompt("Please enter a color")
+//
+// alert(analyzeColor(enterColor))
 
 
 /* ########################################################################## */
 
-/**
+/*
  * TODO:
  * Suppose there's a promotion in Walmart, each customer is given a randomly
  * generated "lucky number" between 0 and 5. If your lucky number is 0 you have
@@ -120,6 +119,27 @@ alert(analyzeColor(enterColor))
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+
+
+function calculateTotal (luckyNum, total) {
+    if (luckyNum === 0) {
+        return (total);
+    } else if (luckyNum === 1) {
+        return (total * .10);
+    } else if (luckyNum === 2) {
+        return (total * .25);
+    } else if (luckyNum === 3) {
+        return (total * .35);
+    } else if (luckyNum === 4) {
+        return (total * .50);
+    } else if (luckyNum === 5) {
+        return (total * 0);
+    }
+}
+
+var num = [0, 1, 2, 3, 4, 5];
+var randomNum = num[Math.floor(Math.random() * num.length)];
+
 
 /**
  * TODO:
