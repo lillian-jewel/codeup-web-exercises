@@ -15,40 +15,47 @@
  *
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
- */
 
-function analyzeColor(colors){
-    if (colors === 'red') {
-        alert ("Apples are Red");
-    } else if ('orange') {
-        alert ("Oranges are Orange");
-    } else if ('yellow') {
-        alert ("Lemons are Yellow");
-    } else if ('green') {
-        alert ("Grass is Green");
-    } else if ('blue') {
-        alert ("The ocean is Blue");
-    } else if ('purple') {
-        alert ("Lavender is purple");
+
+function analyzeColor(color) {
+    if (color === 'red') {
+        alert("Apples are Red");
+    } else if (color === 'orange') {
+        alert("Oranges are Orange");
+    } else if (color === 'yellow') {
+        alert("Lemons are Yellow");
+    } else if (color === 'green') {
+        alert("Grass is Green");
+    } else if (color === 'blue') {
+        alert("The ocean is Blue");
+    } else if (color === 'purple') {
+        alert("Lavender is purple");
     } else {
-        alert ("I'm not too sure about that color.");
+        alert("I'm not too sure about that color.");
     }
-/*
+}
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
+
+
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+
 /*
-
- * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
+*  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
- */
 
 
-}
+analyzeColor(randomColor)
+console.log(analyzeColor(randomColor))
+
+*/
+
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
