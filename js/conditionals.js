@@ -121,28 +121,24 @@ console.log(analyzeColor(randomColor))
  */
 
 
-function calculateTotal (luckyNum, total) {
-    if (luckyNum === 0) {
-        return (total);
-    } else if (luckyNum === 1) {
-        return (total * .10);
-    } else if (luckyNum === 2) {
-        return (total * .25);
-    } else if (luckyNum === 3) {
-        return (total * .35);
-    } else if (luckyNum === 4) {
-        return (total * .50);
-    } else if (luckyNum === 5) {
-        return (total * 0);
+function calculateTotal (x, y) {
+    if (x === 0) {
+        return (y);
+    } else if (x === 1) {
+        return (y * .10);
+    } else if (x === 2) {
+        return (y * .25);
+    } else if (x === 3) {
+        return (y * .35);
+    } else if (x === 4) {
+        return (y * .50);
+    } else if (x === 5) {
+        return (y * 0);
     }
 }
 
-var num = [0, 1, 2, 3, 4, 5];
-var randomNum = num[Math.floor(Math.random() * num.length)];
 
-
-/**
- * TODO:
+/*
  * Uncomment the line below to generate a random number between 0 and 5.
  * (In this line of code, 0 is inclusive, and 6 is exclusive)
  * Prompt the user for their total bill, then use your `calculateTotal` function
@@ -150,9 +146,13 @@ var randomNum = num[Math.floor(Math.random() * num.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+var luckyNumber = Math.floor(Math.random() * 6);
 
-/**
+alert("Your lucky number is " + luckyNumber)
+
+var totalBill = prompt("Your total bill, with the discount, is going to be $" + calculateTotal())
+
+/*
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
