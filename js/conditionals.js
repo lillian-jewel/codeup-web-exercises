@@ -121,22 +121,22 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 
 
-function calculateTotal (luckyNumber, totalBill) {
-    if (luckyNumber === 0) {
-        return (totalBill);
-    } else if (luckyNumber === 1) {
-        return (totalBill - (totalBill * .10));
-    } else if (luckyNumber === 2) {
-        return (totalBill - (totalBill * .25));
-    } else if (luckyNumber === 3) {
-        return (totalBill - (totalBill * .35));
-    } else if (luckyNumber === 4) {
-        return (totalBill - (totalBill * .50));
-    } else if (luckyNumber === 5) {
-        return (totalBill - totalBill);
-    }
-
-}
+// function calculateTotal (luckyNumber, totalBill) {
+//     if (luckyNumber === 0) {
+//         return (totalBill);
+//     } else if (luckyNumber === 1) {
+//         return (totalBill - (totalBill * .10));
+//     } else if (luckyNumber === 2) {
+//         return (totalBill - (totalBill * .25));
+//     } else if (luckyNumber === 3) {
+//         return (totalBill - (totalBill * .35));
+//     } else if (luckyNumber === 4) {
+//         return (totalBill - (totalBill * .50));
+//     } else if (luckyNumber === 5) {
+//         return (totalBill - totalBill);
+//     }
+//
+// }
 
 
 /*
@@ -148,11 +148,11 @@ function calculateTotal (luckyNumber, totalBill) {
  */
 // Generate a random number between 0 and 6
 
-var luckyNumber = Math.floor(Math.random() * 6);
-
-var bill = prompt("What is your bill total?");
-
-alert("Your lucky number is " + luckyNumber + "! Your total with discount is $" + calculateTotal(luckyNumber, bill));
+// var luckyNumber = Math.floor(Math.random() * 6);
+//
+// var bill = prompt("What is your bill total?");
+//
+// alert("Your lucky number is " + luckyNumber + "! Your total with discount is $" + calculateTotal(luckyNumber, bill));
 
 /*
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -173,11 +173,22 @@ alert("Your lucky number is " + luckyNumber + "! Your total with discount is $" 
  */
 function isNum () {
     var enterNum = confirm("Would you like to enter a number?");
-    var input = prompt("Please type in the number.");
-    if (input % 2 == 0 ) {
-        alert(input + " is an even number!");
-    } else if (input % 2 != 0){
-        alert(input + " is an odd number!");
+
+    if (enterNum) {
+        var userInput = parseInt(prompt("What number are you thinking?"));
+        if (isNaN(userInput)) {
+            alert("That is not a number");
+    }   else {
+            alert("Okay, " + userInput + " it is.");
+
+            var evenNum = userInput % 2 === 0;
+            var addHundred = userInput + 100
+            var negPos = userInput >= 0
+
+            alert("Your number is " + evenNum);
+            alert("Your number plus 100 is " + addHundred);
+            alert("Your number is " + negPos);
+        }
     }
 }
 
