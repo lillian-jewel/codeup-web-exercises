@@ -1,5 +1,50 @@
+.background{
+    background-color: lightcyan;
+}
+
+.backimage{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqIShJN1xMIAhNr-yMgWX4Td-tSERhT8zEag&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 180px;
+}
+
 
 .fancy-header {
-    color: purple;
+    color: darkolivegreen;
     text-decoration: underline;
+    font-family: Papyrus;
+}
+
+.align {
+    text-align: center;
+}
+
+ul{
+    list-style: lower-greek;
+}
+
+ol{
+    list-style: square;
+}
+
+td, th{
+    padding: 15px;
+    border: 1px solid black;
+}
+
+a.link{
+    color: purple;
+}
+
+a.visited{
+    color: blue;
+}
+
+a.hover{
+    color: black;
+}
+
+a.active{
+    color: darkorange;
 }
