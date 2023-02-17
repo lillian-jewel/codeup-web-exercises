@@ -1,0 +1,27 @@
+.jumbotron {
+    background-image: url("pics/pizza.png");
+    height: 346px;
+    background-size: cover;
+    margin-bottom: 2em;
+}
+
+.bkborder {
+    border: 2px solid black;
+}
+
+.margin {
+    margin: 1em;
+}
+
+.option-margin {
+    margin: 10px;
+}
+
+.dropdown-border {
+    max-width: inherit;
+}
+
+.margin-span {
+    /*margin: 1em;*/
+    display: inline-block;
+}
