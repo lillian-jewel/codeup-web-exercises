@@ -1,0 +1,31 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+nav a.hover {
+    background-color: blue;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
