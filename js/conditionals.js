@@ -15,6 +15,7 @@
  *
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
+ */
 
 
 function analyzeColor(color) {
@@ -51,38 +52,38 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * You should see a different message every time you refresh the page
 */
 
-// console.log(analyzeColor(randomColor));
+console.log(analyzeColor(randomColor));
 
 
 /*
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
 
-// var analyzeColor = prompt("What is your favorite color?")
-//
-// switch(analyzeColor) {
-//     case "Red":
-//         alert("Apples are Red");
-//         break;
-//     case "Orange":
-//         alert("Oranges are Orange");
-//         break;
-//     case "Yellow":
-//         alert("Lemons are Yellow");
-//         break;
-//     case "Green":
-//         alert("Grass is Green");
-//         break;
-//     case "Blue":
-//         alert("The ocean is Blue");
-//         break;
-//     case "Purple":
-//         alert("Lavender is purple");
-//         break;
-//     default:
-//         alert("I'm not too sure about that color.");
-//         break;
-//     }
+var analyzeColor = prompt("What is your favorite color?")
+
+switch(analyzeColor) {
+    case "Red":
+        alert("Apples are Red");
+        break;
+    case "Orange":
+        alert("Oranges are Orange");
+        break;
+    case "Yellow":
+        alert("Lemons are Yellow");
+        break;
+    case "Green":
+        alert("Grass is Green");
+        break;
+    case "Blue":
+        alert("The ocean is Blue");
+        break;
+    case "Purple":
+        alert("Lavender is purple");
+        break;
+    default:
+        alert("I'm not too sure about that color.");
+        break;
+    }
 //
 
 /*
@@ -93,9 +94,9 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 
 
-//  var enterColor = prompt("Please enter a color")
-//
-// alert(analyzeColor(enterColor))
+ var enterColor = prompt("Please enter a color")
+
+alert(analyzeColor(enterColor))
 
 
 /* ########################################################################## */
@@ -121,22 +122,22 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 
 
-// function calculateTotal (luckyNumber, totalBill) {
-//     if (luckyNumber === 0) {
-//         return (totalBill);
-//     } else if (luckyNumber === 1) {
-//         return (totalBill - (totalBill * .10));
-//     } else if (luckyNumber === 2) {
-//         return (totalBill - (totalBill * .25));
-//     } else if (luckyNumber === 3) {
-//         return (totalBill - (totalBill * .35));
-//     } else if (luckyNumber === 4) {
-//         return (totalBill - (totalBill * .50));
-//     } else if (luckyNumber === 5) {
-//         return (totalBill - totalBill);
-//     }
-//
-// }
+function calculateTotal (luckyNumber, totalBill) {
+    if (luckyNumber === 0) {
+        return (totalBill);
+    } else if (luckyNumber === 1) {
+        return (totalBill - (totalBill * .10));
+    } else if (luckyNumber === 2) {
+        return (totalBill - (totalBill * .25));
+    } else if (luckyNumber === 3) {
+        return (totalBill - (totalBill * .35));
+    } else if (luckyNumber === 4) {
+        return (totalBill - (totalBill * .50));
+    } else if (luckyNumber === 5) {
+        return (totalBill - totalBill);
+    }
+
+}
 
 
 /*
@@ -148,11 +149,11 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 // Generate a random number between 0 and 6
 
-// var luckyNumber = Math.floor(Math.random() * 6);
-//
-// var bill = prompt("What is your bill total?");
-//
-// alert("Your lucky number is " + luckyNumber + "! Your total with discount is $" + calculateTotal(luckyNumber, bill));
+var luckyNumber = Math.floor(Math.random() * 6);
+
+var bill = prompt("What is your bill total?");
+
+alert("Your lucky number is " + luckyNumber + "! Your total with discount is $" + calculateTotal(luckyNumber, bill));
 
 /*
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they

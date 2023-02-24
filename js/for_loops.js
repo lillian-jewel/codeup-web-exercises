@@ -26,5 +26,10 @@ for(var n = 0; n < 10; n++){
 
 
 for(var x = 1; x < 10; x++){
-
+    var string = ""
+    for (var y = 1; y <= x; y++)
+        string += x
+}
+for (var a = 100; a > 0; a -= 5) {
+    console.log(a)
 }

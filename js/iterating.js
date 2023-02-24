@@ -23,21 +23,21 @@ var names = ['Audrey', 'Maximus', 'Payton', 'Gator']
      * accessing each element's index.
      */
 
-    //
-// console.log(names[0])
-// console.log(names[1])
-// console.log(names[2])
-// console.log(names[3])
+
+console.log(names[0])
+console.log(names[1])
+console.log(names[2])
+console.log(names[3])
 
     /*
      * TODO:
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-    //
-    // for(var i = 0; i < names.length; i++){
-    //     console.log('My name is ' + names[i])
-    // }
+
+    for(var i = 0; i < names.length; i++){
+        console.log('My name is ' + names[i])
+    }
 
 
     /*
@@ -45,9 +45,9 @@ var names = ['Audrey', 'Maximus', 'Payton', 'Gator']
      * Refactor your above code to use a `forEach` loop
      */
 
-    // names.forEach(function(name) {
-    //     console.log('My name is '+ name + '!')
-    // });
+    names.forEach(function(name) {
+        console.log('My name is '+ name + '!')
+    });
 
     /*
      * TODO:
@@ -65,11 +65,11 @@ var names = ['Audrey', 'Maximus', 'Payton', 'Gator']
 
 var numbers = [1, 2, 3, 4, 5];
 
-// numbers.forEach(function(first) {
-//     for(var i = 0; i < numbers.length; i++) {
-//         console.log('The first number is '+numbers[0])
-//     }
-// });
+numbers.forEach(function(first) {
+    for(var i = 0; i < numbers.length; i++) {
+        console.log('The first number is '+numbers[0])
+    }
+});
 
 numbers.forEach (function number (first) {
     for (var i = 0; i < numbers.length; i++) {
