@@ -24,6 +24,10 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+<button id="btn">One</button>
+<button id="btn-2">Two</button>
+<button id="btn-3">Three</button>
+<button id="btn-4">Four</button>
 
 <script>
     (function() {
@@ -33,7 +37,7 @@
         console.log(mainHeader.innerHTML);
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool";
+        mainHeader.innerHTML = "JavaScript is ";
 
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById('sub-header');
@@ -51,7 +55,6 @@
                 listItems[i].style.color = "grey"
             }
         }
-
         listItems[0].style.color = "blue"
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
@@ -59,6 +62,28 @@
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs[0].innerText = "Mission Accomplished!";
+
+        //Buttons
+        var btnOne = document.getElementById("btn");
+        btnOne.addEventListener("click", function(){
+            mainHeader.innerHTML = ("JavaScript is Cool");
+        })
+
+        var btnTwo = document.getElementById("btn-2");
+        btnTwo.addEventListener("click", function(color){
+            subParagraphs[0].style.color = "purple";
+        })
+
+        var btnThree = document.getElementById("btn-3");
+        btnThree.addEventListener("click", function(){
+            mainHeader.style.color = "purple";
+        })
+
+        var btnFour = document.getElementById("btn-4");
+        btnFour.addEventListener("click", function(){
+            subHeader.style.color = "purple";
+        })
+
     })();
 </script>
 </body>
